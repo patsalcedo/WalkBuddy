@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello!!</h1>
-  </body>
+    <style>
+         #map {
+            width: 100%;
+            height: 400px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+   
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9AyGTUDBlpt90boFwHBjOISwRbBym20&libraries=places&sensor=false">
+</script>
+
+
+<script type="text/javascript" src="./firstPage.js"> </script>
+</head>
+<body onload="initMap()"  >
+   
+    Current Location: <input id="current"  > </input>
+    <br/>
+    Destination: <input id="destination" > </input>
+   <div id="map"> </div>
+  
+   
+   <div id="mode-selector" class="controls">
+    <input type="radio" name="type" id="changemode-walking" checked="checked">
+    <label for="changemode-walking">Walking</label>
+    </div>
+
+</body>
 </html>

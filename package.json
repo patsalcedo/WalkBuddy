@@ -4,7 +4,7 @@
   "description": "Application created by Muffin Girls in the Summer of Tech Create Camp 2020.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node firstPage.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
