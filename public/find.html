@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
         #map {
@@ -20,17 +21,21 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9AyGTUDBlpt90boFwHBjOISwRbBym20&libraries=places&sensor=false&callback=initMap">
     </script>
 
-<script type="text/javascript" src="./firstPage.js"> </script>
+    <script type="text/javascript" src="firstPage.js"> </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WalkBuddy | Find a Buddy</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
-    
+
 </head>
+
 <body>
     <div class="cls-flex">
         <div class="container">
@@ -51,6 +56,7 @@
                         <div class="button-group">
                             <button type="button" class="btn btn-primary" id="find-buddy-button">FIND BUDDY</button>
                         </div>
+                        <div id="map" width="100%"> </div>
                     </form>
                 </div>
             </div>
@@ -59,11 +65,11 @@
 
     <!-- Button script -->
     <script type="text/javascript">
-
         document.getElementById('find-buddy-button').onclick = function () {
             location.href = "loadingScreen.html";
         };
     </script>
     <!-- Button script END -->
 </body>
+
 </html>
