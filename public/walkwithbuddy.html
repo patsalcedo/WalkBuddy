@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,24 +14,31 @@
     <div class="cls-flex">
         <div class="container">
             <div class="row">
-            <div class="col-sm-12 mb-20">
-                <h1>WALKING WITH BUDDY <span style="font-weight: 200;">TO &nbsp;</span>BRITOMART</h1>
-            </div>
+                <div class="col-sm-12 mb-20">
+                    <h1>WALKING WITH BUDDY <span style="font-weight: 200;">TO &nbsp;</span>BRITOMART</h1>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 mb-20">
-                   <img src="img/map.png" alt="map"/>
+                    <img src="img/map.png" alt="map" />
                 </div>
                 <div class="col-sm-12 mb-20 text-center">
                     <p class="text-center" style="font-weight: bold;">YOUR EST  WALK TIME: 13 MIN</p>
                 </div>
                 <div class="col-sm-12">
                     <div class="button-group">
-                        <button type="button" class="btn btn-primary">I’VE ARRIVE SAFELY</button>
+                        <button type="button" class="btn btn-primary" id="arrived-button">I’VE ARRIVED SAFELY</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+
+        document.getElementById('arrived-button').onclick = function () {
+            location.href = "endScreen.html";
+        };
+    </script>
 </body>
 </html>
