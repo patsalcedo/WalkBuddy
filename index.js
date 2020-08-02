@@ -6,6 +6,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/public/index.html"));
 app.get("/endScreen", (req, res) => res.sendFile(__dirname + "/public/endScreen.html"));
 app.get("/loadingScreen", (req, res) => res.sendFile(__dirname + "/public/loadingScreen.html"));
+app.get("/GoMeetYourBuddy", (req, res) => res.sendFile(__dirname + "/public/GoMeetYourBuddy.html"));
 
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
