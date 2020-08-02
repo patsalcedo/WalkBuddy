@@ -1,16 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9AyGTUDBlpt90boFwHBjOISwRbBym20&libraries=places&sensor=false&callback=initMap">
+    </script>
+
+    <script type="text/javascript" src="firstPage.js"> </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WalkBuddy | Find a Buddy</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
-    
+
 </head>
+
 <body>
     <div class="cls-flex">
         <div class="container">
@@ -23,14 +48,15 @@
                 <div class="col-sm-12">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="current-location-input" placeholder="Current Location">
+                            <input type="text" class="form-control" id="current" placeholder="Current Location">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="destination-input" placeholder="Destination">
+                            <input type="text" class="form-control" id="destination" placeholder="Destination">
                         </div>
                         <div class="button-group">
                             <button type="button" class="btn btn-primary" id="find-buddy-button">FIND BUDDY</button>
                         </div>
+                        <div id="map" width="100%"> </div>
                     </form>
                 </div>
             </div>
@@ -39,11 +65,11 @@
 
     <!-- Button script -->
     <script type="text/javascript">
-
         document.getElementById('find-buddy-button').onclick = function () {
             location.href = "loadingScreen.html";
         };
     </script>
     <!-- Button script END -->
 </body>
+
 </html>
