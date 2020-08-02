@@ -19,6 +19,7 @@ app.get("/our-api", async (req, res) => {
         }
     });
 
+    // Below is what we need to send to Aashi's part
     let result = await response.json();
     res.send({
         "Stop Code": result.response[0].stop_code,
