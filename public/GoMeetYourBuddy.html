@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,33 +15,39 @@
     <div class="cls-flex">
         <div class="container">
             <div class="row">
-            <div class="col-sm-12 mb-20">
-                <h1 class="col text-white">GO MEET YOUR BUDDY</h1>
-            </div>
-            <div class="col-sm-12 mb-20 text-center">
-                <p class="text-center">YOUR JURNEY</p>
-            </div>
-            <div class="col-sm-12 mb-20 text-center">
-                <H1 class="text-center">AUT 	&nbsp; <i class="fas fa-arrow-right"></i> 	&nbsp; BUS ST0P-1 </H1>
-            </div>
-            <div class="col-sm-12 mb-20 text-center">
-                <p class="text-center" style="font-weight: bold;">YOUR EST  WALK TIME: 5 MIN</p>
-            </div>
+                <div class="col-sm-12 mb-20">
+                    <h1 class="col text-white">GO MEET YOUR BUDDY</h1>
+                </div>
+                <div class="col-sm-12 mb-20 text-center">
+                    <p class="text-center">YOUR JURNEY</p>
+                </div>
+                <div class="col-sm-12 mb-20 text-center">
+                    <H1 class="text-center">AUT 	&nbsp; <i class="fas fa-arrow-right"></i> 	&nbsp; BUS ST0P-1 </H1>
+                </div>
+                <div class="col-sm-12 mb-20 text-center">
+                    <p class="text-center" style="font-weight: bold;">YOUR EST  WALK TIME: 5 MIN</p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 mb-20">
-                   <img src="img/map.png" alt="map"/>
+                    <img src="img/map.png" alt="map" />
                 </div>
                 <div class="col-sm-12 mb-20 text-center">
                     <p class="text-center" style="font-weight: bold;">YOUR BUDDY  WILL ARRIVE IN: 4 MIN</p>
                 </div>
                 <div class="col-sm-12">
                     <div class="button-group">
-                        <button type="button" class="btn btn-primary">I’VE MET MY BUDDY</button>
+                        <button type="button" class="btn btn-primary" id="met-buddy-button">I’VE MET MY BUDDY</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        document.getElementById("met-buddy-button").onclick = function () {
+            location.href = "walkwithbuddy.html";
+        };
+    </script>
 </body>
 </html>
