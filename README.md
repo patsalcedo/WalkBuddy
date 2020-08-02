@@ -5,3 +5,5 @@ Designed, and impletemnted while participating at the Create Camp 2020 - Summer 
 
 It consists on finding a buddy near by your location, meeting up at a point, and procceding to walk together. It creates a "match" which you can accept 
 or cancel depending on the data fields that the your buddy has entered. 
+
+[walk-buddy.herokuapp.com](walk-buddy.herokuapp.com)
