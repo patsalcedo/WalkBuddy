@@ -1,45 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walk Buddy</title>
 
-<head>
-    <style>
-        #map {
-            width: 100%;
-            height: 400px;
-        }
-
-        /* Optional: Makes the sample page fill the window. */
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9AyGTUDBlpt90boFwHBjOISwRbBym20&libraries=places&sensor=false&callback=initMap">
-    </script>
-
-
-    <script type="text/javascript" src="./firstPage.js"> </script>
-</head>
-
-<body >
-
-    Current Location: <input id="current"> </input>
-    <br />
-    Destination: <input id="destination"> </input>
-    <div id="map"> </div>
-
-
-    <div id="mode-selector" class="controls">
-        <input type="radio" name="type" id="changemode-walking" checked="checked">
-        <label for="changemode-walking">Walking</label>
-    </div>
-
-    <button id="busSearch">Search Bus</button>
-
-</body>
-
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+  <body>
+    <div class="cls-flex">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <a href="find.html">
+                      <img src="img/logo (1).png" alt="profile">
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </body>
 </html>
