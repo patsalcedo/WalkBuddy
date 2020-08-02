@@ -92,13 +92,13 @@ function initMap() {
             address = [
               (place.address_components[0] &&
                 place.address_components[0].short_name) ||
-                "",
+              "",
               (place.address_components[1] &&
                 place.address_components[1].short_name) ||
-                "",
+              "",
               (place.address_components[2] &&
                 place.address_components[2].short_name) ||
-                "",
+              "",
             ].join(" ");
           }
 
@@ -116,7 +116,7 @@ function initMap() {
             position: coordinates,
             map: map,
             icon: "bus.png",
-            scaledSize: new google.maps.Size(20, 20),
+            scaledSize: new google.maps.Size(10, 10),
           });
           map.setCenter(coordinates);
         });
@@ -161,12 +161,12 @@ function prefill(lant, long) {
   var currentAddress;
   console.log("the prefill", lant, long);
   fetch(
-    "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
+      "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
       lant +
       "," +
       long +
       "&key=AIzaSyCh9AyGTUDBlpt90boFwHBjOISwRbBym20&language=en&result_type=street_address"
-  )
+    )
     .then((res) => res.json())
     .then((json) => {
       currentAddress = json.results[0].formatted_address;
@@ -267,8 +267,7 @@ AutocompleteDirectionsHandler.prototype.route = function () {
   }
   var me = this;
 
-  this.directionsService.route(
-    {
+  this.directionsService.route({
       origin: {
         placeId: this.originPlaceId,
       },
